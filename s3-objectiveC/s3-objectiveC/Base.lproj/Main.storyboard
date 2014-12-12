@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0T1-vm-gf5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqU-EU-Dp8">
+                                <rect key="frame" x="16" y="534" width="568" height="50"/>
+                                <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ADp-eC-gYx"/>
+                                </constraints>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.43921568630000002" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UtR-CP-yDL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XP-mT-QNZ">
+                                <rect key="frame" x="16" y="468" width="276" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="z9U-iz-JBw"/>
+                                </constraints>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="galleryBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPR-78-VJa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCF-SY-Kqe">
+                                <rect key="frame" x="308" y="468" width="276" height="50"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lrC-t7-MEW"/>
+                                </constraints>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ai3-7E-fAR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VqU-EU-Dp8" firstAttribute="top" secondItem="4XP-mT-QNZ" secondAttribute="bottom" constant="16" id="9bM-74-rIS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0T1-vm-gf5" secondAttribute="bottom" id="HHJ-gp-srG"/>
+                            <constraint firstItem="0T1-vm-gf5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Odo-Qk-yqW"/>
+                            <constraint firstItem="OCF-SY-Kqe" firstAttribute="leading" secondItem="4XP-mT-QNZ" secondAttribute="trailing" constant="16" id="aE4-QL-0Bd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VqU-EU-Dp8" secondAttribute="bottom" constant="16" id="aTT-up-su0"/>
+                            <constraint firstItem="VqU-EU-Dp8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="dtu-Vl-1EC"/>
+                            <constraint firstItem="0T1-vm-gf5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nCX-8b-n0f"/>
+                            <constraint firstItem="VqU-EU-Dp8" firstAttribute="top" secondItem="OCF-SY-Kqe" secondAttribute="bottom" constant="16" id="ntg-6C-Mbm"/>
+                            <constraint firstItem="4XP-mT-QNZ" firstAttribute="width" secondItem="OCF-SY-Kqe" secondAttribute="width" id="sHC-in-bL1"/>
+                            <constraint firstAttribute="trailing" secondItem="VqU-EU-Dp8" secondAttribute="trailing" constant="16" id="uFh-D3-VlG"/>
+                            <constraint firstItem="OCF-SY-Kqe" firstAttribute="leading" secondItem="4XP-mT-QNZ" secondAttribute="trailing" constant="16" id="vJJ-Hg-utT"/>
+                            <constraint firstItem="4XP-mT-QNZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="vNp-m6-q1L"/>
+                            <constraint firstAttribute="trailing" secondItem="OCF-SY-Kqe" secondAttribute="trailing" constant="16" id="xOh-wD-u9a"/>
+                            <constraint firstAttribute="trailing" secondItem="0T1-vm-gf5" secondAttribute="trailing" id="xaY-vX-prT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedImage" destination="0T1-vm-gf5" id="cQb-1I-vy9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
