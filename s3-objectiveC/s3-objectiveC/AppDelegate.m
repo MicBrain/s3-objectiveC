@@ -19,10 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     AWSCognitoCredentialsProvider *credentialsProvider = [AWSCognitoCredentialsProvider
                                                           credentialsWithRegionType:AWSRegionUSEast1
-                                                          accountId:@"156974311006"
-                                                          identityPoolId:@"us-east-1:87b1638e-1e2d-45a5-9999-505778436a17"
-                                                          unauthRoleArn:@"arn:aws:iam::156974311006:role/Cognito_s3demoUnauth_DefaultRole"
-                                                          authRoleArn:@"arn:aws:iam::156974311006:role/Cognito_s3demoAuth_DefaultRole"];
+                                                          accountId:@"#######"
+                                                          identityPoolId:@"######"
+                                                          unauthRoleArn:@"#####"
+                                                          authRoleArn:@"######"];
     
     AWSServiceConfiguration *configuration = [AWSServiceConfiguration configurationWithRegion:AWSRegionUSEast1
                                                                           credentialsProvider:credentialsProvider];
